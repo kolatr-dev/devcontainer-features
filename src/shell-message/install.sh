@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-# Debian / Ubuntu packages
-install_debian_packages() {
+# Ubuntu packages
+install_ubuntu_packages() {
     export DEBIAN_FRONTEND=noninteractive
     apt update
     apt install -y software-properties-common
@@ -13,6 +13,13 @@ install_debian_packages() {
     # Clean up
     apt-get -y clean
     rm -rf /var/lib/apt/lists/*
+}
+
+# Debian packages
+install_debian_packages() {
+    wget https://github.com/fastfetch-cli/fastfetch/releases/download/2.17.1/fastfetch-linux-aarch64.deb
+    dpkg -i fastfetch-linux-aarch64.deb
+    rm fastfetch-linux-aarch64.deb
 }
 
 # Alpine packages
@@ -41,7 +48,9 @@ fi
 . /etc/os-release
 
 # Get an adjusted ID independent of distro variants
-if [ "${ID}" = "debian" ] || [ "${ID_LIKE}" = "debian" ]; then
+if [ "${ID}" = "ubuntu" ]; then
+    ADJUSTED_ID="ubuntu"
+elif [ "${ID}" = "debian" ] || [ "${ID_LIKE}" = "debian" ]; then
     ADJUSTED_ID="debian"
 elif [[ "${ID}" = "rhel" || "${ID}" = "fedora" || "${ID}" = "mariner" || "${ID_LIKE}" = *"rhel"* || "${ID_LIKE}" = *"fedora"* || "${ID_LIKE}" = *"mariner"* ]]; then
     ADJUSTED_ID="rhel"
@@ -54,6 +63,9 @@ fi
 
 # Install packages for appropriate OS
 case "${ADJUSTED_ID}" in
+    "ubuntu")
+        install_ubuntu_packages
+        ;;
     "debian")
         install_debian_packages
         ;;
