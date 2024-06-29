@@ -1,0 +1,80 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "data",
+        "source": "!@@@@;    !@@@@@F        _@@@@g\n[@@@@@    |@@@@@       _@@@@@@g\n[@@@@@@   |@@@@@     ,@@@@@@@@g\n[@@@@@@,  |@@@@/    g@@@@@@@@@g\n \"@@@@@@  '@@@@   o@@@@@@@@P\"  \n   \"@@@@   %@@W _@@@@@@P\"      \n     \"@@    '0q@@@@P           \n       9                       \n     ,@@     _gg@g__           \n   ,g@@@   _@@1`@@@@@@a_       \n  g@@@@@   @@@@  '@@@@@@@@p_   \n;@@@@@@/  |@@@@,   \"@@@@@@@@@@g\n[@@@@@@   |@@@@@     \"@@@@@@@@g\n[@@@@@'   |@@@@@       T@@@@@@g\n[@@@@8    |@@@@@|        %@@@@g",
+        "padding": {
+            "top": 1,
+            "left": 1
+        },
+        "color": {
+            "1": "blue"
+        }
+    },
+    "display": {
+        "separator": "",
+        "keyWidth": 18,
+        "color": "blue"
+    },
+    "modules": [
+        {
+            "type": "break"
+        },
+        {
+            "key": "╭─────────────╮",
+            "type": "custom"
+        },
+        {
+            "key": "│             │\u001b[13D{#31} user",
+            "type": "title",
+            "format": "{1}"
+        },
+        {
+            "key": "│             │\u001b[13D{#34}󰟾 distro",
+            "type": "os"
+        },
+        {
+            "key": "│             │\u001b[13D{#35} kernel",
+            "type": "kernel"
+        },
+        {
+            "key": "│             │\u001b[13D{#32} shell",
+            "type": "shell"
+        },
+        {
+            "key": "│             │\u001b[13D{#33}󰍛 cpu",
+            "type": "cpu",
+            "showPeCoreCount": true
+        },
+        {
+            "key": "│             │\u001b[13D{#34}󰉉 disk",
+            "type": "disk",
+            "folders": "/"
+        },
+        {
+            "key": "│             │\u001b[13D{#35} memory",
+            "type": "memory"
+        },
+        {
+            "key": "╰─────────────╯",
+            "type": "custom"
+        },
+        {
+            "key": "╭─────────────╮",
+            "type": "custom"
+        },
+        {
+            "key": "│             │\u001b[13D{#34}⚛ tailscale",
+            "type": "command",
+            "shell": "sh",
+            "format": "",
+            "text": "if pgrep -x \"tailscaled\" > /dev/null; then tailscale status > /dev/null && echo \"\u001b[32m●\u001b[0m Connected\" || echo \"\u001b[31m● Disconnected\"; else echo \"\u001b[31m● Not running\"; fi;"
+        },
+        // <--service placeholder-->
+        {
+            "key": "╰─────────────╯",
+            "type": "custom",
+            "format": " "
+        }
+    ]
+}
