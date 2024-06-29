@@ -96,8 +96,9 @@ for service_check in "${service_checks[@]}"; do
     service_lines+="        {\n"
     service_lines+="            \"key\": \"│             │\\\\u001b[13D{#$service_colour}⚛ $service_name\",\n"
     service_lines+="            \"type\": \"command\",\n"
-    service_lines+="            \"shell\": \"bash\",\n"
-    service_lines+="            \"command\": \"if curl -s http://127.0.0.1:$service_port > /dev/null; then echo -e '\\u001b[32m●\\u001b[0m Up'; else echo -e '\\u001b[31m●\\u001b[0m Down'; fi\"\n"
+    service_lines+="            \"shell\": \"sh\",\n"
+    service_lines+="            \"format\": \"\",\n"
+    service_lines+="            \"text\": \"if curl -s http://127.0.0.1:$service_port > /dev/null; then echo '\\\\u001b[32m●\\\\u001b[0m Up'; else echo '\\\\u001b[31m● Down'; fi\"\n"
     service_lines+="        },\n"
 done
 
