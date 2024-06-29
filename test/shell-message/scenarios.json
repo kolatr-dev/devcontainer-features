@@ -1,0 +1,25 @@
+{
+    "ubuntu:jammy": {
+        "image": "mcr.microsoft.com/devcontainers/base:jammy",
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils:1": {
+                "installZsh": false,
+                "installOhMyZsh": false,
+                "upgradePackages": false,
+                "username": "octocat"
+            },
+            "shell-message": {
+                "serviceChecks": "31:foo:3000,32:bar:3001"
+            }
+        },
+        "remoteUser": "octocat"
+    },
+    "alpine:3.20": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine-3.20",
+        "features": {
+            "shell-message": {
+                "serviceChecks": "31:foo:3000,32:bar:3001"
+            }
+        }
+    }
+}
