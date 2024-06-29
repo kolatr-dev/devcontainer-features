@@ -10,7 +10,7 @@
         "service-checks": {
             "type": "string",
             "description": "Services to check in the format colour:label:port[,colour:label:port]",
-            "default": "31:Next.js:3002,36:Storybook:6006"
+            "default": ""
         }
     },
     "postCreateCommand": "/usr/local/share/kolatr-shell-message-post-create.sh"
