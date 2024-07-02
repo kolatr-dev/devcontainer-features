@@ -90,11 +90,12 @@ config_file=$(<./config.jsonc)
 service_placeholder="// <--service placeholder-->"
 service_lines=""
 for service_check in "${service_checks[@]}"; do
-    service_colour=$(echo "$service_check" | cut -d':' -f1)
-    service_port=$(echo "$service_check" | cut -d':' -f3)
-    service_name=$(echo "$service_check" | cut -d':' -f2)
+    service_port=$(echo "$service_check" | cut -d':' -f2)
+    service_name=$(echo "$service_check" | cut -d':' -f1)
+    service_colour=$(echo "$service_check" | cut -d':' -f3)
+    service_colour=${service_colour:-34}
     service_lines+="        {\n"
-    service_lines+="            \"key\": \"│             │\\\\u001b[13D{#$service_colour}⚛ $service_name\",\n"
+    service_lines+="            \"key\": \"│             │\\\\u001b[13D{#$service_colour}$service_name\",\n"
     service_lines+="            \"type\": \"command\",\n"
     service_lines+="            \"shell\": \"sh\",\n"
     service_lines+="            \"format\": \"\",\n"
