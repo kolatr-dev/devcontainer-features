@@ -3,6 +3,6 @@
 set -e
 
 # Add to shell profiles
-echo "fastfetch" >> ~/.bashrc
-echo "fastfetch" >> ~/.zshrc
-echo "fastfetch" >> ~/.profile
+echo 'if [ "$KOLATR_DISABLE_SHELL_MESSAGE" != "true" ]; then fastfetch; fi' >> ~/.bashrc
+echo 'if [ "$KOLATR_DISABLE_SHELL_MESSAGE" != "true" ]; then fastfetch; fi' >> ~/.zshrc
+echo 'if [ "$KOLATR_DISABLE_SHELL_MESSAGE" != "true" ]; then fastfetch; fi' >> ~/.profile
