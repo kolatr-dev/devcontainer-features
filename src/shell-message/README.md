@@ -1,7 +1,7 @@
 
 # Kolatr: fastfetch (Shell Message) (shell-message)
 
-Displays system information specific to Kolatr when opening a new shell via fastfetch. Currently only compatible with Alpine 3.20 and Ubuntu Jammy.
+Displays system information specific to Kolatr when opening a new shell via fastfetch. See tests for base image compatibility. Disable with KOLATR_DISABLE_SHELL_MESSAGE=true.
 
 ## Example Usage
 
