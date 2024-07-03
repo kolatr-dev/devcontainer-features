@@ -14,6 +14,14 @@
         },
         "remoteUser": "octocat"
     },
+    "debian:bookworm": {
+        "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+        "features": {
+            "shell-message": {
+                "serviceChecks": "31:foo:3000,32:bar:3001"
+            }
+        }
+    },
     "alpine:3.20": {
         "image": "mcr.microsoft.com/devcontainers/base:alpine-3.20",
         "features": {
