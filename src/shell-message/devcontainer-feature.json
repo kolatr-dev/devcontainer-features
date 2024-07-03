@@ -1,7 +1,7 @@
 {
     "name": "Kolatr: fastfetch (Shell Message)",
     "id": "shell-message",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Displays system information specific to Kolatr when opening a new shell via fastfetch. Currently only compatible with Alpine 3.20 and Ubuntu Jammy.",
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
@@ -9,7 +9,7 @@
     "options": {
         "service-checks": {
             "type": "string",
-            "description": "Services to check in the format colour:label:port[,colour:label:port]",
+            "description": "Services to check in the format label:port[:colour][,label:port[:colour]]",
             "default": ""
         }
     },
