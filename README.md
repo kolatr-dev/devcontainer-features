@@ -1,6 +1,6 @@
 # Dev Container Features: Kolatr Style
 
-> This repo is bootstrapped from the [Devcontaienrs Feature Starter](https://github.com/devcontainers/feature-starter).
+> This repo is bootstrapped from the [Devcontainers Feature Starter](https://github.com/devcontainers/feature-starter).
 
 ## Features
 
