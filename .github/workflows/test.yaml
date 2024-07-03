@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - shell-messages
+          - shell-message
         baseImage:
           - ubuntu:jammy
     steps:
@@ -31,7 +31,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - shell-messages
+          - shell-message
     steps:
       - uses: actions/checkout@v4
 

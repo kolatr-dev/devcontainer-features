@@ -4,7 +4,7 @@
 
 ## Features
 
-* [shell-messages](./src/shell-messages/README.md)
+* [shell-message](./src/shell-message/README.md)
 
 ## Usage 
 
