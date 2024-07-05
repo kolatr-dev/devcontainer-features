@@ -2,9 +2,7 @@
 set -e
 
 if [ ! "$MAILPIT_AUTOSTART" = "false" ]; then
-    echo "Running mailpit"
-    mailpit > /var/log/mailpit.log
-    echo "mailpit complete"
+    mailpit > /var/log/mailpit.log 2>&1 &
 fi
 
 exec "$@"

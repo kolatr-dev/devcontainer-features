@@ -1,7 +1,7 @@
 {
     "name": "mailpit",
     "id": "mailpit",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Installs and runs Mailpit. https://github.com/axllent/mailpit",
     "dependsOn": {
         "ghcr.io/devcontainers/features/common-utils": {}
