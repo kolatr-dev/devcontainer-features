@@ -4,7 +4,12 @@
     "version": "1.0.1",
     "description": "Installs and runs Mailpit. https://github.com/axllent/mailpit",
     "dependsOn": {
-        "ghcr.io/devcontainers/features/common-utils": {}
+        "ghcr.io/devcontainers/features/common-utils": {
+            "installZsh": false,
+            "installOhMyZsh": false,
+            "installOhMyZshConfig": false,
+            "upgradePackages": false
+        }
     },
     "options": {
         "autoStart": {
