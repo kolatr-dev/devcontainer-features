@@ -1,0 +1,34 @@
+{
+    "ubuntu:jammy": {
+        "image": "mcr.microsoft.com/devcontainers/base:jammy",
+        "features": {
+            "mailpit": {
+                "autoStart": true
+            }
+        }
+    },
+    "ubuntu:jammy:disabled": {
+        "image": "mcr.microsoft.com/devcontainers/base:jammy",
+        "features": {
+            "mailpit": {
+                "autoStart": false
+            }
+        }
+    },
+    "debian:bookworm": {
+        "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+        "features": {
+            "mailpit": {
+                "autoStart": true
+            }
+        }
+    },
+    "alpine:3.20": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine-3.20",
+        "features": {
+            "mailpit": {
+                "autoStart": true
+            }
+        }
+    }
+}

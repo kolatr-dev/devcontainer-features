@@ -1,0 +1,17 @@
+{
+    "name": "mailpit",
+    "id": "mailpit",
+    "version": "1.0.0",
+    "description": "Installs and runs Mailpit. https://github.com/axllent/mailpit",
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/common-utils": {}
+    },
+    "options": {
+        "autoStart": {
+            "type": "boolean",
+            "description": "Run Mailpit on start",
+            "default": true
+        }
+    },
+    "entrypoint": "/usr/local/bin/mailpit-entrypoint"
+}

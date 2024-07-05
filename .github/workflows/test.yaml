@@ -13,6 +13,7 @@ jobs:
     strategy:
       matrix:
         features:
+          - mailpit
           - shell-message
         baseImage:
           - ubuntu:jammy
@@ -31,6 +32,7 @@ jobs:
     strategy:
       matrix:
         features:
+          - mailpit
           - shell-message
     steps:
       - uses: actions/checkout@v4
