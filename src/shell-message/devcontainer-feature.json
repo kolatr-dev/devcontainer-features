@@ -1,7 +1,7 @@
 {
     "name": "Kolatr: fastfetch (Shell Message)",
     "id": "shell-message",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Displays system information specific to Kolatr when opening a new shell via fastfetch. See tests for base image compatibility. Disable with KOLATR_DISABLE_SHELL_MESSAGE=true.",
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"

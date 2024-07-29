@@ -4,15 +4,10 @@ set -e
 # Ubuntu packages
 install_ubuntu_packages() {
     export DEBIAN_FRONTEND=noninteractive
-    apt update
     apt install -y software-properties-common
     add-apt-repository -y ppa:zhangsongcui3371/fastfetch
     apt update
     apt install -y fastfetch
-
-    # Clean up
-    apt-get -y clean
-    rm -rf /var/lib/apt/lists/*
 }
 
 # Debian packages
