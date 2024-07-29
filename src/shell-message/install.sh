@@ -6,7 +6,7 @@ install_ubuntu_packages() {
     export DEBIAN_FRONTEND=noninteractive
     apt install -y software-properties-common
     add-apt-repository -y ppa:zhangsongcui3371/fastfetch
-    apt update
+    apt update -o Dir::Etc::sourcelist="sources.list.d/zhangsongcui3371-ubuntu-fastfetch-$(lsb_release -cs).list" -o Dir::Etc::sourceparts="-" -o APT::Get::List-Cleanup="0"
     apt install -y fastfetch
 }
 
