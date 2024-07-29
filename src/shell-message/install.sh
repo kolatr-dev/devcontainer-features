@@ -19,11 +19,11 @@ install_ubuntu_packages() {
 install_debian_packages() {
     ARCH=$(dpkg --print-architecture)
     if [ "$ARCH" = "arm64" ]; then
-        wget https://github.com/fastfetch-cli/fastfetch/releases/download/2.17.1/fastfetch-linux-aarch64.deb
+        wget https://github.com/fastfetch-cli/fastfetch/releases/download/2.20.0/fastfetch-linux-aarch64.deb
         dpkg -i fastfetch-linux-aarch64.deb
         rm fastfetch-linux-aarch64.deb
     elif [ "$ARCH" = "amd64" ]; then
-        wget https://github.com/fastfetch-cli/fastfetch/releases/download/2.17.1/fastfetch-linux-amd64.deb
+        wget https://github.com/fastfetch-cli/fastfetch/releases/download/2.20.0/fastfetch-linux-amd64.deb
         dpkg -i fastfetch-linux-amd64.deb
         rm fastfetch-linux-amd64.deb
     else
