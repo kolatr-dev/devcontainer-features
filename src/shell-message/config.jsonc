@@ -13,7 +13,9 @@
     },
     "display": {
         "separator": "",
-        "keyWidth": 18,
+        "key": {
+            "width": 18
+        },
         "color": "blue"
     },
     "modules": [
