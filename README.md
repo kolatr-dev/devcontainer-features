@@ -9,6 +9,7 @@
 * [mailpit](./src/mailpit/README.md)
 * [shell-history](./src/shell-history/README.md)
 * [shell-message](./src/shell-message/README.md)
+* [starship](./src/starship/README.md)
 
 ## Usage 
 

@@ -1,0 +1,7 @@
+{
+    "name": "Kolatr: Starship",
+    "id": "starship",
+    "version": "1.0.0",
+    "description": "Installs starship into zsh and bash.",
+    "postCreateCommand": "/usr/local/share/kolatr-starship-post-create.sh"
+}
