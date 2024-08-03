@@ -1,0 +1,16 @@
+{
+    "name": "Kolatr: Tailscale",
+    "id": "tailscale",
+    "version": "1.0.0",
+    "description": "Installs tailscale with persistence.",
+    "dependsOn": {
+        "ghcr.io/tailscale/codespace/tailscale": {}
+    },
+    "mounts": [
+        {
+            "source": "tailscale-persistent-cache-${devcontainerId}",
+            "target": "/workspaces/.tailscale/",
+            "type": "volume"
+        }
+    ]
+}

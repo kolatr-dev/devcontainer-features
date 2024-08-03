@@ -10,6 +10,7 @@
 * [shell-history](./src/shell-history/README.md)
 * [shell-message](./src/shell-message/README.md)
 * [starship](./src/starship/README.md)
+* [tailscale](./src/tailscale/README.md)
 
 ## Usage 
 
