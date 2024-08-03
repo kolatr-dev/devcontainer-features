@@ -115,6 +115,6 @@ config_file=$(echo "$config_file" | sed "s|$service_placeholder|$service_lines|"
 mkdir -p ~/.config/fastfetch
 echo "$config_file" > ~/.config/fastfetch/config.jsonc
 
-# Add a post-create script to add fastfetch to shell profiles.
+# Add a post-create script.
 cat post-create.sh > /usr/local/share/kolatr-shell-message-post-create.sh
 chmod +x /usr/local/share/kolatr-shell-message-post-create.sh

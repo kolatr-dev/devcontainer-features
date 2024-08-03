@@ -1,7 +1,7 @@
 {
     "name": "Kolatr: Shell History",
     "id": "shell-history",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Persists shell histories in bash and zsh.",
     "mounts": [
         {
@@ -9,5 +9,6 @@
             "target": "/commandhistory",
             "type": "volume"
         }
-    ]
+    ],
+    "postCreateCommand": "/usr/local/share/kolatr-shell-history-post-create.sh"
 }

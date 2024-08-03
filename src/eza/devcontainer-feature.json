@@ -1,9 +1,10 @@
 {
     "name": "Kolatr: Eza",
     "id": "eza",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Installs eza and aliases `ls`. https://eza.rocks",
     "dependsOn": {
         "ghcr.io/social-anthrax/eza-devcontainer/eza:0": {}
-    }
+    },
+    "postCreateCommand": "/usr/local/share/kolatr-eza-post-create.sh"
 }

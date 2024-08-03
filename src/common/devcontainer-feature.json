@@ -1,10 +1,10 @@
 {
     "name": "Kolatr: Common",
     "id": "common",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A set of common features for Kolatr projects. These features are language agnostic, and aim to provide a consistent set of tools and configurations for all Kolatr projects. This is a wrapper feature, which simply installs other features.",
     "dependsOn": {
-        "ghcr.io/kolatr-dev/devcontainer-features/eza:1.0.0": {},
-        "ghcr.io/kolatr-dev/devcontainer-features/shell-history:1.0.0": {}
+        "ghcr.io/kolatr-dev/devcontainer-features/eza:1.0.1": {},
+        "ghcr.io/kolatr-dev/devcontainer-features/shell-history:1.0.1": {}
     }
 }
