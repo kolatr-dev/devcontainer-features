@@ -1,7 +1,10 @@
 {
     "name": "Kolatr: Starship",
     "id": "starship",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Installs starship into zsh and bash.",
-    "postCreateCommand": "/usr/local/share/kolatr-starship-post-create.sh"
+    "postCreateCommand": "/usr/local/share/kolatr-starship-post-create.sh",
+    "dependsOn": {
+        "ghcr.io/devcontainers-contrib/features/starship:1": {}
+    }
 }
