@@ -1,13 +1,13 @@
 
-# Kolatr: Shell History (shell-history)
+# Kolatr: Starship (starship)
 
-Persists shell histories in bash and zsh.
+Installs starship into zsh and bash.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/kolatr-dev/devcontainer-features/shell-history:1": {}
+    "ghcr.io/kolatr-dev/devcontainer-features/starship:1": {}
 }
 ```
 
@@ -17,4 +17,4 @@ Persists shell histories in bash and zsh.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/kolatr-dev/devcontainer-features/blob/main/src/shell-history/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/kolatr-dev/devcontainer-features/blob/main/src/starship/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
