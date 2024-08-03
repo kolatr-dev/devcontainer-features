@@ -4,7 +4,10 @@
 
 ## Features
 
+* [common](./src/common/README.md)
+* [eza](./src/eza/README.md)
 * [mailpit](./src/mailpit/README.md)
+* [shell-history](./src/shell-history/README.md)
 * [shell-message](./src/shell-message/README.md)
 
 ## Usage 
