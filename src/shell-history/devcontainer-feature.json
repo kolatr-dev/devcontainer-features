@@ -1,0 +1,13 @@
+{
+    "name": "Kolatr: Shell History",
+    "id": "shell-history",
+    "version": "1.0.0",
+    "description": "Persists shell histories in bash and zsh.",
+    "mounts": [
+        {
+            "source": "bashhistory-${devcontainerId}",
+            "target": "/commandhistory",
+            "type": "volume"
+        }
+    ]
+}
