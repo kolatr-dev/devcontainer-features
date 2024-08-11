@@ -1,13 +1,13 @@
 
-# Kolatr: Starship (starship)
+# Kolatr: Tailscale (tailscale)
 
-Installs starship into zsh and bash.
+Installs tailscale with persistence.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/kolatr-dev/devcontainer-features/starship:1": {}
+    "ghcr.io/kolatr-dev/devcontainer-features/tailscale:1": {}
 }
 ```
 
@@ -17,4 +17,4 @@ Installs starship into zsh and bash.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/kolatr-dev/devcontainer-features/blob/main/src/starship/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/kolatr-dev/devcontainer-features/blob/main/src/tailscale/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
