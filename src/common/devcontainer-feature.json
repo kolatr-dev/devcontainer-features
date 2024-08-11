@@ -7,6 +7,7 @@
         "ghcr.io/kolatr-dev/devcontainer-features/eza:1.0.1": {},
         "ghcr.io/kolatr-dev/devcontainer-features/shell-history:1.0.1": {},
         "ghcr.io/kolatr-dev/devcontainer-features/starship:1.0.3": {},
-        "ghcr.io/kolatr-dev/devcontainer-features/tailscale:1.0.0": {}
+        "ghcr.io/kolatr-dev/devcontainer-features/tailscale:1.0.0": {},
+        "ghcr.io/devcontainers/features/aws-cli:1": {}
     }
 }
