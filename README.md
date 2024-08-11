@@ -12,6 +12,10 @@
 * [starship](./src/starship/README.md)
 * [tailscale](./src/tailscale/README.md)
 
+## Updates
+
+If you add features to this repo, to make them avaialble to downstream devcontainers you need to run the [release workflow](https://github.com/kolatr-dev/devcontainer-features/actions/workflows/release.yaml) manually.
+
 ## Usage 
 
 ```sh
