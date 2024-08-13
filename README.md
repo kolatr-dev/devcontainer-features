@@ -4,6 +4,7 @@
 
 ## Features
 
+* [aws](./src/aws/README.md)
 * [common](./src/common/README.md)
 * [eza](./src/eza/README.md)
 * [mailpit](./src/mailpit/README.md)
