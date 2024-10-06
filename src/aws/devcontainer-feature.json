@@ -1,0 +1,27 @@
+{
+    "name": "Kolatr: AWS",
+    "id": "aws",
+    "version": "1.0.4",
+    "description": "Installs the AWS CLI and Kolatr configuration. Use `aws-sso-run` to run commands within an SSO session.",
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/aws-cli:1": {}
+    },
+    "mounts": [
+        {
+            "source": "${localEnv:HOME}${localEnv:USERPROFILE}/.aws",
+            "target": "/root/.aws",
+            "type": "bind"
+        }
+    ],
+    "containerEnv": {
+        "AWS_CONFIG_FILE": "/opt/aws/config",
+        "AWS_DEFAULT_PROFILE": "kolatr-dev"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "amazonwebservices.aws-toolkit-vscode"
+            ]
+        }
+    }
+}
